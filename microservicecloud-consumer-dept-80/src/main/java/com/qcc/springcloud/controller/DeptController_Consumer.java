@@ -20,7 +20,9 @@ import java.util.List;
  */
 @RestController
 public class DeptController_Consumer {
-    public static final String REST_URL_PREFIX = "http://localhost:8001";
+//    public static final String REST_URL_PREFIX = "http://localhost:8001";
+    //根据Eureka中注册的服务名称来进行服务, 而非IP地址+端口的方式
+    public static final String REST_URL_PREFIX = "http://microservicecloud-dept";
 
     @Autowired
     private RestTemplate restTemplate;
