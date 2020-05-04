@@ -16,7 +16,7 @@ public class MySelfRule {
 
     @Bean
     public IRule myRule(){
-        return new RandomRule();
+        return new RoundRobinRepeat5Role();//使用定义的重复5次之后再轮询的负载均衡策略
     }
 
 }
