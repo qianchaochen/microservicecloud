@@ -19,3 +19,10 @@ info:
   company.name: qianchaochen Tech
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+zuul:
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+#  ignored-services: microservicecloud-dept
+  ignored-services: "*"   # 忽略所有的微服务
+#  prefix: /qcc 忽略指定前缀的所有微服务
